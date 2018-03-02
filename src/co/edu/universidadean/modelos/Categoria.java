@@ -8,5 +8,6 @@ public enum Categoria {
     RPG,
     FPS,
     SIMULADOR,
-    ARCADE
+    ARCADE,
+    OCIO
 }
