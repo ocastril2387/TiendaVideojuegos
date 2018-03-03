@@ -52,7 +52,7 @@ public class Tienda {
 
         if (juegos.size() > 0) {
             for (Juego juegoActual : juegos) {
-                cantidadTotalVendidos += juegoActual.getCantidadVendida();
+                cantidadTotalVendidos = cantidadTotalVendidos + juegoActual.getCantidadVendida();
             }
 
             return cantidadTotalVendidos;

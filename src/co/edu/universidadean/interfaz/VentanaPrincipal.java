@@ -25,9 +25,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         // Creación de juegos:
         Juego fifa = new Juego("Fifa 17", 7.67, 30, "fifa.png", Categoria.DEPORTES);
-
         tiendaJuegos.agregarJuego(fifa);
-
         JuegoJPanel panelFifa17 = new JuegoJPanel(this);
         panelFifa17.actualizarPanel(fifa);
         panelFifa17.setPreferredSize(new Dimension(450, 250));

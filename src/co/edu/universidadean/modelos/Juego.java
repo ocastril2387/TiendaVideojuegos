@@ -72,6 +72,6 @@ public class Juego {
     }
 
     public void vender() {
-        ++cantidadVendida;
+        cantidadVendida = cantidadVendida + 1;
     }
 }

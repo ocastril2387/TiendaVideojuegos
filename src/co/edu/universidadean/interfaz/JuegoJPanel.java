@@ -40,8 +40,8 @@ public class JuegoJPanel extends JPanel implements ActionListener {
 
     private JButton botonComprar;
 
-    public JuegoJPanel(VentanaPrincipal pPrincipal) {
-        principal = pPrincipal;
+    public JuegoJPanel(VentanaPrincipal p) {
+        principal = p;
 
         setLayout(new BorderLayout());
 
@@ -80,8 +80,8 @@ public class JuegoJPanel extends JPanel implements ActionListener {
         JPanel panelSur = new JPanel();
         panelSur.setLayout(new GridLayout(1, 2));
 
-        botonComprar = new JButton("Vender");
-        botonComprar.setActionCommand("VENDER");
+        botonComprar = new JButton("Comprar");
+        botonComprar.setActionCommand("COMPRAR");
         botonComprar.addActionListener(this);
         panelSur.add(botonComprar);
 
@@ -135,7 +135,7 @@ public class JuegoJPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent evento) {
         String comando = evento.getActionCommand();
 
-        if (comando.equals("VENDER")) {
+        if (comando.equals("COMPRAR")) {
             if (principal.venderJuego(juego)) {
                 actualizarPanel(juego);
             } else {
